@@ -4,7 +4,8 @@
   "description": "Probot extension to trigger events when someone mentions a given username.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --fix"
   },
   "keywords": [
     "probot",
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/itaditya/probot-on-mention#readme",
   "peerDependencies": {
     "probot": ">=0.10.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
   }
 }

@@ -5,12 +5,15 @@
 Example - 
 
 ```js
-const onMention = require('probot-on-mention');
+const onMention = require('probot-on-mention')
 
 module.exports = (robot) => {
-  onMention(robot, { username: 'itaditya' });
+  onMention(robot)
   robot.on('user.mentioned', async context => {
-    // OMG itaditya is mentioned, do something about it !!
+    const username = context.payload.mentioned
+    console.log(`${username} was mentioned!`)
   })
 }
 ```
+
+Install it with `npm i probot-on-mention`.
