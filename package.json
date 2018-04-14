@@ -1,6 +1,6 @@
 {
   "name": "probot-on-mention",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Probot extension to trigger events when someone mentions a given username.",
   "main": "index.js",
   "scripts": {
