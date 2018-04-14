@@ -9,7 +9,7 @@ const onMention = require('probot-on-mention')
 
 module.exports = (robot) => {
   onMention(robot)
-  robot.on('user.mentioned', async context => {
+  robot.on('mention', async context => {
     const username = context.payload.mentioned
     console.log(`${username} was mentioned!`)
   })
