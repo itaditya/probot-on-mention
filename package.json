@@ -6,7 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "probot",
+    "probot-extension"
+  ],
+  "author": "Aditya Agarwal <adityaa803@gmail.com> (adi.surge.sh)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itaditya/probot-on-mention.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itaditya/probot-on-mention/issues"
+  },
+  "homepage": "https://github.com/itaditya/probot-on-mention#readme",
+  "peerDependencies": {
+    "probot": ">=0.10.0"
+  },
 }
