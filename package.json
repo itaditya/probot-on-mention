@@ -22,5 +22,5 @@
   "homepage": "https://github.com/itaditya/probot-on-mention#readme",
   "peerDependencies": {
     "probot": ">=0.10.0"
-  },
+  }
 }
