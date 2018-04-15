@@ -1,7 +1,9 @@
+const getMentions = require('./getMentions');
+
 module.exports = (robot) => {
   robot.on('issue_comment.created', context => {
-    const re = /@[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}/gi
-    const mentions = context.payload.comment.body.match(re)
+    const commentBody = context.payload.comment.body
+    const mentions = getMentions(commentBody)
     const event = {
       event: 'mention',
       payload: {
@@ -10,7 +12,7 @@ module.exports = (robot) => {
       }
     }
     mentions.forEach(mention => {
-      event.payload.mentioned = mention.substr(1)
+      event.payload.mentioned = mention
       robot.receive(event)
     })
   })
